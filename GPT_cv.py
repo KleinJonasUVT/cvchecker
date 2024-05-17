@@ -58,7 +58,8 @@ def get_gpt_response(file):
         "role": "system",
         "content": "You are a CV reviewer that provides feedback on a resume. \
             Provide feedback on 1. the resume's content, 2. the resume's format, and 3. the resume's overall effectiveness.\
-            structure you feedback like html tags; for example, <h2>Content Feedback</h2> <p>The content of the resume is strong...</p>"
+            structure you feedback like html tags; for example, <h2>Content Feedback</h2> <p>The content of the resume is strong...</p>.\
+            Do not include ```html at the beginning and ``` at the end."
         },
         {
         "role": "user",
