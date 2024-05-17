@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tilburg.ai</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+  <main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>CV Checker For Your Next Application!</h2>
+          <p>Welcome to the CV checker! Upload your CV and get a detailed analysis of your CV. The analysis will include the following checks: <i>Content feedback</i>, <i>Format feedback</i>, <i>Overall effectiveness</i>.</p>
+        </div>
+
+        <div class="row">
+          <div class="input">
+            <form id="CV_form" role="form" class="php-email-form">
+              <div class="form-group">
+                <label for="file">Upload your CV or relevant file:</label>
+                <input type="file" class="form-control" name="file" id="file" required>
+              </div>
+              <div class="text-center"><button type="submit">Get the checks on my CV!</button></div>
+            </form>
+            <div class="my-3">
+              <div class="loading">Loading...</div>
+              <div class="error-message">Error!</div>
+              <div id="result" class="sent-message"></div>
+            </div>          
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename='/js/validate.js') }}"></script>
+
+  <!-- iFrame JS file-->
+  <script src="{{ url_for('static', filename='/js/iframe.js') }}"></script>
+
+  <!-- Ajax -->
+  <script src="{{ url_for('static', filename='/js/jquery-3.7.1.min.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+</body>
+</html>
