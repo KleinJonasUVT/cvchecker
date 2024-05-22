@@ -14,3 +14,4 @@ fitz
 requests
 pymupdf
 werkzeug
+frontend
